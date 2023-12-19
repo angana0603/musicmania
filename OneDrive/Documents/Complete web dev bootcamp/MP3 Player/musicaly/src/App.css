@@ -1,0 +1,62 @@
+.App {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: slideshow 10s infinite; /* Change the image every 10 seconds */
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slideshow {
+  0% { background-image: url('bg/austin-neill-hgO1wFPXl3I-unsplash.jpg'); }
+  25% { background-image: url('bg/charlesdeluvio-6k4HkET8dPM-unsplash.jpg'); }
+  50% { background-image: url('bg/frank-alarcon-SngnUjFLRhg-unsplash.jpg'); }
+  75% { background-image: url('bg/keagan-henman-bG-DowcuLVM-unsplash.jpg'); }
+  100% { background-image: url('bg/zachary-smith-zorgErvL_Fs-unsplash.jpg'); }
+}
+
+.content {
+  position: relative;
+  padding: 50px;
+  z-index: 1;
+}
+
+.mp3-player {
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
